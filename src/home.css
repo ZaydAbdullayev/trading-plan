@@ -72,8 +72,8 @@
   position: relative;
   cursor: pointer;
   transform: rotate(-2deg);
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
   touch-action: manipulation;
 }
 
@@ -122,8 +122,10 @@
   gap: 20px;
   font-family: "Caveat";
   white-space: nowrap;
-  user-select: none;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   touch-action: manipulation;
 }
 
@@ -150,8 +152,8 @@
   width: 35px;
   height: 35px;
   background: #ffffff15;
-  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border-radius: 50px;
 }
 

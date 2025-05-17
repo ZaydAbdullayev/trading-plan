@@ -2,6 +2,7 @@ import React from "react";
 import { FaFileAlt, FaSave, FaCopy } from "react-icons/fa";
 import "./home.css";
 import { RiTwitterXFill } from "react-icons/ri";
+import { saveCardAsImage } from "./context/fetch.service";
 
 const text = `
 ok so here’s the thing:
@@ -85,9 +86,19 @@ const modifiedText = (text) => {
 };
 
 export const App = () => {
-  const handleClick = (event) => {
-    const letterIndex = event.target.getAttribute("letter-index");
-    alert(`Letter index: ${letterIndex}`);
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(
+      () => {
+        alert("Text copied to clipboard!");
+      },
+      (err) => {
+        console.error("Could not copy text: ", err);
+      }
+    );
+  };
+  const save = () => {
+    const white_list = document.querySelector(".white-list");
+    saveCardAsImage(white_list);
   };
   return (
     <div className="w100 df fdc aic app-wrapper">
@@ -113,7 +124,6 @@ export const App = () => {
             dangerouslySetInnerHTML={{
               __html: modifiedText(text),
             }}
-            onClick={handleClick}
           ></div>
         </div>
       </div>
@@ -121,10 +131,10 @@ export const App = () => {
         <button className="button-86">
           View more <FaFileAlt size={18} />
         </button>
-        <button className="button-86">
+        <button className="button-86" onClick={save}>
           Save <FaSave size={18} />
         </button>
-        <button className="button-86">
+        <button className="button-86" onClick={() => copyToClipboard(text)}>
           Copy <FaCopy size={18} />
         </button>
       </div>
