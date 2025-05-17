@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", sans-serif;
+}
+
+:root {
+  color-scheme: light dark;
+  color: #2b2b2b;
+  background-color: #fff;
+  letter-spacing: 0.05rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  background-color: #fcfcfc;
+  color: #2a2a2a;
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #fff #1c1c1c62;
+  }
+  *::-webkit-scrollbar {
+    width: 0.1rem;
+    background-color: #fff;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #1c1c1c62;
+    border-radius: 0.5rem;
+  }
+  *::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #1c1c1c;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #3c3c3c;
+  border-radius: 0.5rem;
+}
+
+input {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.f1 {
+  flex: 1;
+}
+
+.f2 {
+  flex: 2;
+}
+
+.f3 {
+  flex: 3;
+}
+
+.f50 {
+  flex: 0 0 calc(50% - 13px);
+}
+
+.o03 {
+  opacity: 0.3;
+}
+
+.o04 {
+  opacity: 0.4;
+}
+
+.o05 {
+  opacity: 0.5;
+}
+
+.o06 {
+  opacity: 0.6;
+}
+
+.o07 {
+  opacity: 0.7;
+}
+
+.o08 {
+  opacity: 0.8;
+}
+
+.df {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.fww {
+  flex-wrap: wrap;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-25 {
+  gap: 25px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.pd1 {
+  padding: 5px;
+}
+
+.pd2 {
+  padding: 10px;
+}
+
+.pd3 {
+  padding: 15px;
+}
+
+.pd4 {
+  padding: 20px;
+}
+
+.px1 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.px2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.px4 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px5 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.px6 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.py1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.py2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.py4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py5 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.py6 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pt1 {
+  padding-top: 5px;
+}
+
+.pt2 {
+  padding-top: 10px;
+}
+
+.pb1 {
+  padding-bottom: 5px;
+}
+
+.pb2 {
+  padding-bottom: 10px;
+}
+.rd5 {
+  border-radius: 2px;
+}
+.rd10 {
+  border-radius: 10px;
+}
+
+.rd15 {
+  border-radius: 15px;
+}
+
+.rd20 {
+  border-radius: 20px;
+}
