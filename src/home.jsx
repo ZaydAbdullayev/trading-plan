@@ -86,20 +86,6 @@ const modifiedText = (text) => {
 };
 
 export const App = () => {
-  const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text).then(
-      () => {
-        alert("Text copied to clipboard!");
-      },
-      (err) => {
-        console.error("Could not copy text: ", err);
-      }
-    );
-  };
-  const save = () => {
-    const white_list = document.querySelector(".white-list");
-    saveCardAsImage(white_list);
-  };
   return (
     <div className="w100 df fdc aic app-wrapper">
       <div className="w100 df fdc aic gap-30 py3 links">
@@ -126,21 +112,6 @@ export const App = () => {
             }}
           ></div>
         </div>
-      </div>
-      <div className="df aic gap-20 app-buttons">
-        <button className="button-86">
-          View more <FaFileAlt size={18} />
-        </button>
-        <button className="button-86" onClick={save}>
-          Save <FaSave size={18} />
-        </button>
-        <button className="button-86" onClick={() => copyToClipboard(text)}>
-          Copy <FaCopy size={18} />
-        </button>
-      </div>
-      <div className="df fdc aic app-footer">
-        <p>© 2025 Meme Trading Masterplan</p>
-        <p>Disclaimer: This is not financial advice. Trade at your own risk.</p>
       </div>
     </div>
   );
